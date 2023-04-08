@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium - Cartoonizer</title>
+    <link href="premium-style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="premium">
+
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">Cartoonizer</a>
+                </div>
+                <div class="user-logo">
+                    <img src="./images/user_logo.png">
+                </div>
+                <ul>
+                    <li><a href="./home.html">HOME</a></li>
+                    <li><a href="./AboutUs.html">ABOUT US</a></li>
+                    <li><a href="./support.html">SUPPORT</a></li>
+                    <li class="btn_request"><a href="#">PREMIUM</a></li>
+                </ul>
+            </nav>    
+        </div>
+
+        <div class="content">
+
+            <div class="tag">
+                <h1>Download your Cartoons now, with our premium account.</h1>
+                <br><br><br>
+                <p>Set your cartoons as your wallpapers, social media posts and do much more, with just one click! <br>
+                    Join our premium account, to avail these services, in one-low price.<br> Pay by month or the year. Cancel anytime.
+                </p>
+            </div>
+            <div class="price">
+                <div class="category">
+
+                    <div class="annual">
+                        <div class="head">
+                            <h2>Annual Plan</h2>
+                            <p>Billed anually at $59.88</p>
+                        </div>
+
+                        <div class="cost">
+                            <h2>$4.99 <span>/month</span></h2>
+                        </div>  
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div class="use">
+                            <p>Unlimited download access for all the cartoons created</p>
+                        </div>
+
+                        <button id="year"><a>UPGRADE NOW</a></button>
+                    </div>
+
+                    <div class="monthly">
+                        <div class="head">
+                            <h2>Monthly Plan</h2>
+                            <p>Billed monthly at $8.99</p>
+                        </div>
+
+                        <div class="cost">
+                            <h2>$8.99  <span>/month</span></h2>
+                        </div>  
+                        <br><br>
+                        <hr>
+                        <br><br>
+                        <div class="use">
+                            <p>Unlimited download access for all the cartoons created</p>
+                        </div>
+
+                        <button id="month"><a>UPGRADE NOW</a></button> 
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="faq">
+                <h2>Frequently Asked Question's</h2>
+                <div class="q1">
+                    <p><a onclick="Answer1()">How much Cartoonizer cost and can i try it for free?</a></p>
+                    <div id="a1">
+                        We offer 2 different account types. Our Basic account is free to use, requires no registration, and provides access to numerous essential 
+                        effects and features. Click here to start editing with Cartoonizer Basic.
+                        Our Plus account costs $8.99 per month or a 45% discounted price of $59.88 if billed annually (once a year). Cartoonizer Premium provides access
+                        to higher resolution export options and much more!   
+                    </div>
+                </div>
+                <div class="q2">
+                    <p><a onclick="Answer2()">Can I cancel my subscription or switch to a different billing plan at anytime?</a></p>
+                    <div id="a2">
+                      Yes! You can cancel your monthly or annual subscription at anytime. You may also switch from monthly to annual billing (or vice versa) at anytime
+                       from your Cartoonizer premium account.
+
+                      Please note: we do not offer refunds for annual subscriptions, however, if you switch from annual to monthly billing within the first 30 days of
+                       joining, you may qualify for a full or partial refund for your annual subscription. We are unable to accommodate refund requests past the initial 
+                       30 days.
+                      
+                      We do not offer refunds for monthly subscriptions.
+                    </div>
+                </div>
+                <div class="q3">
+                    <p><a onclick="Answer3()">Do I have to create an account to use Cartoonizer?</a></p>
+                    <div id="a3">
+                      No, you don’t need to create an account to use Cartoonizer Basic. Creating an account is only necessary when you upgrade to
+                       Cartoonizer Premium in order to manage your projects and subscription.
+                    </div>
+                </div>
+                <div class="q4">
+                    <p><a onclick="Answer4()">Do I have to download or install anything to use Cartoonizer?</a></p>
+                    <div id="a4">
+                      Nothing. Cartoonizer is entirely a web-based platform, which means no downloading or installing of any apps to your computer is necessary. 
+                      As long as you meet our minimum requirements, 
+                      you can access Cartoonizer online from anywhere in the world, on any machine.
+                    </div>
+                </div>
+                <div class="q5">
+                    <p><a onclick="Answer5()">Can I use images I edit with Cartoonizer for commercial purposes?</a></p>
+                    <div id="a5">
+                      Yes, you may sell or otherwise commercially benefit from projects and photos created and/or edited with Cartoonizer Basic and Premium accounts.
+                       However, shared use of your Cartoonizer account with others is strictly prohibited.
+                    </div>
+                </div>
+                <div class="q6">
+                    <p><a onclick="Answer6()">What payment methods do you accept?</a></p>
+                    <div id="a6">
+                      We only currently accept Credit/Debit card payments (handled by Stripe). Other payment options are on our roadmap and coming soon.
+                    </div>
+                </div>
+                <div class="q7">
+                    <p><a onclick="Answer7()">What happens if I cancel my subscription?</a></p>
+                    <div id="a7">
+                      You can deactivate and cancel your Premium subscription at any time from your Cartoonizer account. Immediately upon deactivating your account,
+                       your Premium subscription will be terminated, your account will be closed and all data (such as saved projects and personal information) will 
+                       be permanently removed.
+
+                      Please note: we do not offer refunds for annual subscriptions, however, if you switch from annual to monthly billing within the first 30 days 
+                      of joining, you may qualify for a full or partial refund for your annual subscription. We are unable to accommodate annual subscription refund 
+                      requests past the initial 30 days.
+                      
+                      We do not offer refunds for monthly subscription.
+                    </div>
+                </div>
+            </div>
+
+            <div class="support">
+                <p>For additional questions about Cartoonizer, feel free to <a href="./support.html">contact us</a>.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Answer1() {
+            var x = document.getElementById("a1");
+            if (x.style.display == "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
+          function Answer2() {
+            var x = document.getElementById("a2");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function Answer3() {
+            var x = document.getElementById("a3");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function Answer4() {
+            var x = document.getElementById("a4");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function Answer5() {
+            var x = document.getElementById("a5");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function Answer6() {
+            var x = document.getElementById("a6");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+          function Answer7() {
+            var x = document.getElementById("a7");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+    </script>
+</body>
+</html>

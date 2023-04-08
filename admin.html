@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home - Cartoonizer</title>
+    <link href="admin-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="home_next">
+        <div class="navbar">
+
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">Cartoonizer</a>
+                </div>
+                <div class="user-logo">
+                    <img src="./images/user_logo.png">
+                </div>
+                <ul>
+                    <li class="btn_request"><a >ADMIN</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="content">
+            <div class="panel">
+                <div class="panel-btns">
+                    <div class="date">
+                        <a href="#">
+                            <span class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                              </svg>
+                            </span>
+                            <span id = "date"> </span>
+                        </a>
+                    </div>
+                    <div class="tutorial">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 
+                                        0 0 0 0-.814l-3.5-2.5z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                Tutorial
+                            </span>
+                        </a>
+                    </div>
+                    <div class="theme">
+                        <a href="#" onclick="colorChange()">
+                            <span class="icon">
+                                <img src="./images/white-moon.png" id="color_scheme">
+                            </span>
+                            <span class="text">
+                                Theme
+                            </span>
+                        </a>
+
+                    </div>
+                    
+                    <div class="features">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0
+                                         1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                Features
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 
+                                        0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                About
+                            </span>
+                        </a>
+                    </div>
+                    <div class="faq">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 
+                                        1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168
+                                         1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463
+                                          1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0
+                                           0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94
+                                            0 .533.425.927 1.01.927z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                FAQ's
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-bot">
+            <div class="cards">
+                <div class="row1">        
+                    <div class="bot-queries card">
+                        <div class="image-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                              </svg>
+                            <h4>User Details</h4> 
+                        </div>
+                        <div class="container">
+                                <p><br>
+                                    How to use cartoonizer chat bot ?<br><br>
+                                    Do I need to create an account to use cartoonizer?<br>
+                                    <br><a href="">Click here</a>, to see some solved chat-bot queries!
+                                </p> 
+                        </div>
+                    </div>      
+                    <div class="pricing-queries card">
+                        <div class="image-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"/>
+                              </svg>
+                            <h4>Subscription</h4> 
+                        </div>
+                        <div class="container">
+                            <p><br>
+                                Can I cancel my subscription anytime?<br><br>
+                                Can i switch to a different billing plan at anytime?<br>
+                                ubscription!
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <div class="technical-queries card">
+                        <div class="image-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                              </svg>
+                            <h4>Finance Details</h4> 
+                        </div>
+                        <div class="container">
+                            <p><br>
+                                Iam not able to create account, how should I do that?<br><br>
+                                Unable to download the picture, what should I do?<br>
+                                <br><a>Click here</a>, to see some faq's!
+                            </p>  
+                        </div>
+                    </div>    
+                    <div class="payment-support card">
+                        <div class="image-section">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-diamond-fill" viewBox="0 0 16 16">
+                                <path d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435zM5.495 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z"/>
+                              </svg>
+                            <h4>Queries/Issues</h4> 
+                        </div>
+                        <div class="container">
+                            <p><br>
+                                What payment methods do you accept?<br><br>
+                                What if my plan don't activate after payment?<br>
+                                <br><a>Click here</a>, to look at some common issues.
+                            </p> 
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- script for "dark-mode" -->
+    <script>
+        var color_scheme = document.getElementById("color_scheme");
+
+        if (localStorage.getItem("theme") == null) {
+            localStorage.setItem("theme", "light");
+        }
+
+        localStorage.setItem("theme", "light");
+        let localData = localStorage.getItem("theme");
+
+        if (localData == "light") {
+            color_scheme.src = "./images/white-moon.png";
+            document.body.classList.remove("dark-mode");
+        }
+        else if (localData == "dark") {
+            color_scheme.src = "./images/black-sun.png";
+            document.body.classList.add("dark-mode");
+        }
+
+        color_scheme.onclick = colorChange();
+        function colorChange() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains("dark-mode")) {
+                color_scheme.src = "./images/black-sun.png";
+                localStorage.setItem("theme", "dark");
+            }
+            else {
+                color_scheme.src = "./images/white-moon.png";
+                localStorage.setItem("theme", "light");
+            }
+        } 
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./responses.js"></script>
+    <script src="./chat.js"></script>
+    <script src="./cartoonize.js"></script>
+    <script>
+        // program to display the date
+// get local machine date time
+const date = new Date();
+
+// get the date as a string
+const n = date.toDateString();
+    console.log( n);
+    document.getElementById("date").textContent = n;
+</script>
+</body>
+
+</html>

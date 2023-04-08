@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/*  
+    font-family: 'Work Sans', sans-serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Abril Fatface', cursive;
+*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    height:100%;
+    width:100%;
+    display:flex;
+    position: absolute;
+    background-image: url('./images/bg_grad_purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login::before{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top:100px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height:100px;
+    line-height: 100px;
+    padding: 0px 50px;
+    z-index: 3;
+    display: inline-block;
+}
+.logo a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 45px;
+    color:white;
+    float: left;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+}
+
+/* Content Section */
+.content{
+    width: 100%;
+    height:85%;
+    position: relative;
+    display: flex;
+    margin-top: 100px;
+
+}
+
+.sign-in{
+    display: flex;
+    height: 75%;
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 19%;
+}
+
+.board{
+    width: 40%;
+    height:100%;
+    background-color:rgba(235, 229, 235, 0.996) ;
+
+    padding-left: 30px;
+    padding-top: 100px;
+}
+
+.board h2{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+    font-size: 50px;
+    font-weight: 200;
+    color: black;
+}
+
+.board p{
+    color: rgb(110, 107, 107);
+}
+
+.board a{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.details{
+    width: 60%;
+    height: 100%;
+    color: white;
+    background-color: rgba(32,33,35,1);
+}
+
+.details form{
+    padding: 80px 0px 0px 50px;
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 30px;
+}
+
+.details p{
+    padding: 40px 0px 0px 50px;
+    font-family: 'Work Sans', sans-serif;
+    position: fixed;
+}
+
+input{
+    width: 40%;
+    background: transparent;
+    color: white;
+    line-height: 20px;
+    outline: none !important;
+    border: none;
+    border-bottom: 3px solid magenta;
+}
+
+input[type=text]:focus {
+    width: 65%;
+    border-color: goldenrod;
+}
+
+input[type=password]:focus {
+    width: 65%;
+    border-color: goldenrod;
+}
+.show{
+    width: 25%;
+    font-size: 13px;
+    display: inline-block;
+    margin-top: 5px;
+    color: rgb(110, 107, 107);    
+}
+
+#show-password{
+    width: 10%;
+    align-items: center;
+    padding-top: 10%;
+}
+
+#submit{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: rgba(52,53,65,1);
+    color:#707075;
+    margin-left: 25%;
+    padding: 10px 50px;
+    border-style: solid;
+    border-radius: 50px;
+    border-color:magenta;
+    border-width: 3px;
+    width: 45%;
+}
+
+#submit:focus{
+    color: white;
+    border-color: goldenrod;
+    border-width: 5px;
+}
+
+.custom{
+    height: 10%;
+    width: 20%;
+    margin-left: 4%;
+    margin-top: 36%;
+    float: left;
+}
+.previous svg{
+    color: white;
+}
+
+.previous a{
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+}

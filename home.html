@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Home - Cartoonizer</title>
+    <link href="home_style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="home_next">
+        <div class="navbar">
+
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">Cartoonizer</a>
+                </div>
+                <div class="user-logo">
+                    <img src="./images/user_logo.png">
+                </div>
+                <ul>
+                    <li><a id="thisPage" href="#">HOME</a></li>
+                    <li><a href="./AboutUs.html">ABOUT US</a></li>
+                    <li><a href="./support.html">SUPPORT</a></li>
+                    <li class="btn_request"><a href="./premium.html">PREMIUM</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div class="content">
+            <div class="panel">
+                <div class="panel-btns">
+                    <div class="new-chat">
+                        <a href="./home.html">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 
+                                        0 1 8 4z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                New Chat
+                            </span>
+                        </a>
+                    </div>
+                    <div class="theme">
+                        <a href="#" onclick="colorChange()">
+                            <span class="icon">
+                                <img src="./images/white-moon.png" id="color_scheme">
+                            </span>
+                            <span class="text">
+                                Theme
+                            </span>
+                        </a>
+
+                    </div>
+                    <div class="tutorial">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-play-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 
+                                        0 0 0 0-.814l-3.5-2.5z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                Tutorial
+                            </span>
+                        </a>
+                    </div>
+                    <div class="features">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-list" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0
+                                         1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                Features
+                            </span>
+                        </a>
+                    </div>
+                    <div class="about">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 
+                                        0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                About
+                            </span>
+                        </a>
+                    </div>
+                    <div class="faq">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-question-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.496 6.033h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 
+                                        1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168
+                                         1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463
+                                          1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286a.237.237 0 0
+                                           0 .241.247zm2.325 6.443c.61 0 1.029-.394 1.029-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94
+                                            0 .533.425.927 1.01.927z" />
+                                </svg>
+                            </span>
+                            <span class="text">
+                                FAQ's
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-bot">
+
+                <div class="bot-info">   
+                    <div class="description">
+                        <h2>Tips</h2>
+                        <ul> 
+                            <li>Start your conversation with a "Hello".</li>
+                            <li>To end the conversation, type "bye"</li>
+                            <li>To start a new conversation, click on "New Chat", present in the panel.</li>
+                            <li>For any queries, type "help", and follow the given instructions, or go to our "Support" page.</li>
+                        </ul>
+                    </div>  
+                    <div class="description"><!--capabilities-->
+                        <h2>Capabilities & Limitations</h2>
+                        <ul> 
+                            <li>Transforming an image into a cartoon picture</li>
+                            <li>Turning ypur pcitures into 80's, black & white pictures</li>
+                            <li>Applying color filters to your images</li>
+                            <li>Draws sketch of your image</li>
+                            <li>Cannot respond to normal/generic talk</li>
+                        </ul>
+                    </div>  
+                    <div class="description">
+                        <h2>Examples</h2>
+                        <ul> 
+                            <li>Cartoonify my image</li>
+                            <li>Make a funny image of mine</li>
+                            <li>Generate a black&white picture of me</li>
+                            <li>Apply different color filters on my image</li>
+                        </ul>
+                    </div>  
+                </div>
+
+                <div class="chat-bar-collapsible">
+                    <button id="chat-button" type="button" class="collapsible">Chat with us!
+                        <i id="chat-icon"  class="fa fa-fw fa-comments-o"></i>
+                    </button>
+
+                    <div class="chat-content-block">
+                        <div class="full-chat-block">
+                            <div class="outer-container">
+                                <div class="chat-container">
+                                    <div id="chatbox">
+                                        <h5 id="chat-timestamp"></h5>
+                                        <p id="botStarterMessage" class="botText"></p>
+                                    </div>
+
+                                    <div class="message-area">  
+                                        <div class="msg-box" id="userInput">
+                                            <a onclick="upload()" id="image-input">
+                                                <svg id="image-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-image" viewBox="0 0 16 16">
+                                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                                    <path d="M2.002 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2h-12zm12 1a1 1 0 0 1 1 1v6.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12V3a1 1 0 0 1 1-1h12z"/>
+                                                </svg>
+                                            </a>
+                                            <input id="textInput" class="input-box" type="text" placeholder="Start Conversation...">
+                                            <a onclick="sendButton()">
+                                                <svg id="send-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                                                class="bi bi-send-fill" viewBox="0 0 16 16">
+                                                    <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div id="chat-bar-bottom">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>   
+            </div>
+            
+        </div>
+
+    </div>
+    <!-- script for "dark-mode" -->
+    <script>
+        var color_scheme = document.getElementById("color_scheme");
+
+        if (localStorage.getItem("theme") == null) {
+            localStorage.setItem("theme", "light");
+        }
+
+        localStorage.setItem("theme", "light");
+        let localData = localStorage.getItem("theme");
+
+        if (localData == "light") {
+            color_scheme.src = "./images/white-moon.png";
+            document.body.classList.remove("dark-mode");
+        }
+        else if (localData == "dark") {
+            color_scheme.src = "./images/black-sun.png";
+            document.body.classList.add("dark-mode");
+        }
+
+        color_scheme.onclick = colorChange();
+        function colorChange() {
+            document.body.classList.toggle('dark-mode');
+            if (document.body.classList.contains("dark-mode")) {
+                color_scheme.src = "./images/black-sun.png";
+                localStorage.setItem("theme", "dark");
+            }
+            else {
+                color_scheme.src = "./images/white-moon.png";
+                localStorage.setItem("theme", "light");
+            }
+        } 
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./responses.js"></script>
+    <script src="./chat.js"></script>
+    <script src="./cartoonize.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+
+.aboutUs{
+    height:100%;
+    width:100%;
+    display:flex;
+    position: absolute;
+}
+.aboutUs::before{
+    content: "";
+    position: absolute;
+    top:100px;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+/* navbar */
+
+nav{
+    position: absolute;
+    width: 100%;
+    height:100px;
+    background-image: url('./images/bg_grad_purple.jpg');
+    line-height: 100px;
+    padding: 0px 50px;
+    background-size: cover;
+    z-index: 3;
+    display: inline-block;
+}
+
+.logo a{
+    text-decoration: none;
+    text-align: left;
+    font-size: 45px;
+    color:white;
+    float: left;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    cursor: pointer;
+}
+
+nav .user-logo{
+    float: right;
+}
+
+nav .user-logo img{
+    height: 50px;
+    margin-top: 22px;
+    margin-left: 25px;
+    margin-right: 30.75px;
+}
+
+nav ul{
+    float: right;
+}
+
+nav li{
+    display: inline-block;
+    list-style: none;
+}
+
+nav li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    color: white;
+    text-decoration:none;
+}
+
+nav li a:hover{
+    background-color: black;
+    border: none;
+    border-radius: 25px;
+}
+nav .btn_request a:hover{
+    background-color: #fab803;
+}
+
+/* content */
+.content{
+    width: 100%;
+    height:100%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.welcome{
+    width: 100%;
+    height: 90vh;
+    background-image: url('./images/welcome.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.welcome h1{
+    text-align: center;
+    padding-top: 200px;
+    font-family: 'Satisfy', cursive;
+}
+
+.welcome span{
+    font-weight: 400;
+    font-size: 100px;
+}
+.intro{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+}
+
+.intro h1{
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 5px;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
+    font-weight: 500;
+}
+
+.intro p{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 25px;
+}
+
+.info{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(32,33,35,1);
+}
+.info p{
+    color: lightgray;
+    text-align: center;
+    padding-top: 225px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.us{
+    height: 100vh;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.us img{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+.us h1{
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 100px;
+}
+
+.us p{
+    padding-top: 70px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 25px;  
+}
+
+.team{
+    width: 100%;
+    height: 100vh;
+}
+
+.team-intro{
+    text-align: center;
+    height:17%;
+}
+
+.team-intro h2{
+    position: relative;
+    padding:0px 500px 0px 500px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 60px;
+    top: 30px;
+}
+
+.team-members{
+    height: 82.5%;
+}
+
+.profile{
+    height:90%;
+    width: 90%;
+    margin-left:5%;
+    position: relative;
+    top:5%;
+    display: flex;
+}
+
+.profile-1{
+    height: 100%;
+    width:20%;
+    background-image: url('./images/bg_grad_purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin-left: 4%;
+}
+
+.profile-2{
+    height: 100%;
+    width:20%;
+    background-image: url('./images/bg_grad_purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin-left: 4%;
+}
+
+.profile-3{
+    height: 100%;
+    width:20%;
+    border-radius: 25px;
+    background-image: url('./images/bg_grad_purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 4%;
+}
+
+.profile-4{
+    height: 100%;
+    width:20%;
+    background-image: url('./images/bg_grad_purple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+    margin-left: 4%;
+}
+
+.dp{
+    height: 50%;
+    width: 100%;
+}
+
+.circle-1{
+    position: relative;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    left: 17%;
+    top: 15%;
+    bottom: 5%;
+    background-image: linear-gradient(to right,#f3be66,#ce10fa);
+}
+
+.circle-2{
+    position: relative;
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.425);  
+    left: 5%;
+    top: 5%;
+    bottom: 5%;
+    right: 5%;
+}
+
+#harshith,#devaraju,#teja,#vasu{
+    height: 180px;
+    width: 180px;
+}
+
+
+.role .name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.role p{
+    color: lightgray;
+    position: relative;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+.role .designation{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}

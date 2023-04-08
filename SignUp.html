@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Cartoonizer</title>
+
+    <link rel="stylesheet" href="signup-style.css">
+</head>
+<body>
+    <div class="create-account" >
+        <div class="navbar">    
+            <nav>
+                <div class="logo">
+                    <a href="./index.html">Cartoonizer</a>
+                </div>  
+            </nav>
+        </div>
+           
+        <div class="content">
+
+            <div class="custom">
+                <div class="previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" 
+                    class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 
+                        0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                    </svg>
+                    <a href="./index.html">Go Back</a>
+                </div>
+            </div>
+
+            <div class="sign-up">
+                <div class="board">
+                        <h2>Sign Up</h2>
+                        <br><br><br>
+                        <p>By creating an account, you accept <br>
+                            all our terms and conditions.<br><br><br>
+                            Already have an account! <br>
+                            <a href="./Login.html">Click Here</a>
+                            to login to your account.<br><br><br>
+                        </p>
+                    </div>
+
+                    <div class="details">
+                        <form method="post" name="f" action="./home.html" onsubmit="return validateForm()">
+                            Email Id <br>  <input type="text" name="email"><br><br>
+                            Password <br>  <input type="password" name="password1"><br>
+
+                            <label class="show">
+                                <input type="checkbox" id="show-password" onclick=" return showPassword()">Show Password
+                            </label><br><br>
+
+                            Confirm Password <br>  <input type="password" name="password2"><br>
+                            <label class="confirm">
+                                <input type="checkbox" id="confirm-password" onclick="showPassword()">Show Password
+                            </label><br><br>
+
+                            <button id="submit"type="submit" value="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </body>
+
+    <script>
+        function validateForm(){//for validating email and password
+
+            let emailId = document.f.email.value;
+            let mailFormat = /^[^]+@[^]+\.[a-z]{2,3}$/;
+
+            let pswd1 = document.f.password1.value;
+            let pswd2 = document.f.password2.value;
+            let pswdFormat =/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+            if(emailId ==""){
+                alert("Please enter mail id!");
+                return false;
+            }
+            if(!emailId.match(mailFormat))
+            {
+                alert("Invalid Email!\nFormat: name@mail.extension");
+                return false;
+            }
+
+            if(pswd1==""){
+                alert("Please enter your password!");
+                return false;
+            }
+
+            if(pswd1.length<8){
+                alert("Password should be minimum of 8 characters!");
+                return false;
+            }
+            if(!pswd1.match(pswdFormat)){
+                alert("Password do not match with the pattern\nPattern include: Atleast one UPPERCASE LETTER, LOWERCASE LETTER, NUMBER, SPECIAL CHARACTERS (@, $, !, %, *, ?, &)");
+                return false;
+            }
+            if(pswd2==""){
+                alert("Please enter your password!");
+                return false;
+            }
+            if(pswd1 != pswd2){
+                alert("Password must be same!");
+                return false;
+            }
+        }
+        function showPassword() {
+            const passwordInput1 = document.getElementsByName("password1")[0];
+            const passwordInput2 = document.getElementsByName("password2")[0];
+            const showPasswordCheckbox1 = document.getElementById("show-password");
+            const showPasswordCheckbox2 = document.getElementById("confirm-password");
+          
+            if (showPasswordCheckbox1.checked) {
+              passwordInput1.type = "text";
+            } else {
+              passwordInput1.type = "password";
+            }
+          
+            if (showPasswordCheckbox2.checked) {
+              passwordInput2.type = "text";
+            } else {
+              passwordInput2.type = "password";
+            }
+          }
+          
+    </script>
+</body>
+</html>
